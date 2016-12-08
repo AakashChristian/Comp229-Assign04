@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#"  CodeBehind="Site1.master.cs" Inherits="Comp229_Assign04.Pages.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+   <link rel="stylesheet" type="text/css" href="../Stylesheets/MasterStyleSheet.css"/>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+        .auto-style2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        <div id="BannerDiv" class="auto-style1">
+                <br />
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="100px" ImageUrl="~/Assets/G.png" />
+                <h2 id="LogoHeader">G-Models</h2>
+            </div>
+            <div id="NavigationDiv">
+                <br />
+                <a id="HomeLinkButton" href="HomePage.aspx">Home</a> | <a id="ModelsLinkButton" href="ModelsPage.aspx">Models</a> | <a id="UpdateLinkButton" href="UpdatePage.aspx">Update</a></div>
+        <div id="ContentDiv">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                &nbsp;</p>
+        
+        </asp:ContentPlaceHolder></div>
+    </div>
+        <div id="FancyDiv"></div>
+    </form>
+    <footer id="FooterBox" class="auto-style2">
+        <br />
+        &copy; Copyright Aakash Christian Comp229-Assign04</footer>
+</body>
+</html>
